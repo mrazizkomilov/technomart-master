@@ -1,0 +1,32 @@
+.radio{
+  position: relative;
+  display: block;
+  padding-left: 35px;
+  margin-bottom: 15px;
+  font-size: 15px;
+  line-height: 20px;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+.radio__input{
+  @include visually-hidden;
+}
+
+.radio__indicator{
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 25px;
+  height: 25px;
+  background-repeat: no-repeat;
+}
+
+.radio__input + .radio__indicator{
+  background-image: url("../img/radio-off.svg");
+}
+
+.radio__input:checked + .radio__indicator{
+  background-image: url("../img/radio-on.svg");
+}

@@ -1,0 +1,13 @@
+.page-info{
+  padding: 67px 0;
+  background-color: #f4f7f9;
+}
+
+.page-info__heading{
+  @include section-title;
+  margin-bottom: 25px;
+}
+
+.page-info__text{
+  margin-bottom: 0;
+}

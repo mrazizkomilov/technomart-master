@@ -1,0 +1,43 @@
+.logo{
+	position: relative;
+	display: inline-block;
+	border-bottom: 5px solid #bf2733;
+	background-color: #ee3643;
+
+	&--site-header{
+		margin-bottom: -5px;
+		padding: 11px 56px 11px 55px;
+	}
+
+	&__site-footer{
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		width: 220px;
+		height: 68px;
+	}
+
+
+	&:hover,
+	&:focus{
+		border-bottom-color: #9b1b25;
+		background-color: #ca2c37;
+	}
+
+	&:active{
+		border-bottom-color: #8f1922;
+		background-color: #ba2732;
+	}
+}
+.logo__img{
+	vertical-align: middle;
+
+	&--site-header{
+		width: 109px;
+		height: 19px;
+	}
+	&--site-footer{
+		width: 138px;
+		height: 23px;
+	}
+}

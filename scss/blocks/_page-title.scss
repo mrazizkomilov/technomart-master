@@ -1,0 +1,8 @@
+.page-title{
+  @include section-header($bgcolor: #f2f6f8);
+  margin-bottom: 20px;
+}
+
+.page-title__heading{
+  @include section-title($color: #32425c);
+}

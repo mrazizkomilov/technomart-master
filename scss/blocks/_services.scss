@@ -1,0 +1,15 @@
+.services{
+  padding-top: 65px;
+  padding-bottom: 50px;
+  background-color: #f4f7f9;
+}
+
+.services__heading{
+  margin-bottom: 26px;
+  @include section-title($color: #000);
+}
+
+.services__text{
+  width: 400px;
+  margin-bottom: 23px;
+}

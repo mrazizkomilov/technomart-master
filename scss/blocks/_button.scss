@@ -1,0 +1,47 @@
+.button{
+  display: inline-block;
+  padding: 10px 48px;
+  border: none;
+  border-radius: 3px;
+  background-color: #ee3643;
+  color: #ffffff;
+  font-family: $font-stack-accent;
+  font-size: 14px;
+  line-height: 18px;
+  text-align: center;
+  text-transform: uppercase;
+  text-decoration: none;
+
+  &:hover,
+  &:focus{
+    background-color: #ca2c37;
+  }
+
+  &:active{
+    background-color: #ba2732;
+  }
+
+  &--wide{
+    width: 253px;
+  }
+
+  &--block{
+    display: block;
+    width: 100%;
+  }
+
+  &--modal{
+    width: 220px;
+    padding-right: 0;
+    padding-left: 0;
+  }
+
+  &--white{
+    background-color: #ffffff;
+    color: #000000;
+
+    &:hover{
+      color: #ffffff;
+    }
+  }
+}

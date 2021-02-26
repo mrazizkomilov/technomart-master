@@ -1,0 +1,36 @@
+.checkbox{
+  position: relative;
+  display: block;
+  padding-left: 35px;
+  margin-bottom: 15px;
+  font-size: 15px;
+  line-height: 20px;
+  text-transform: uppercase;
+  cursor: pointer;
+
+  &:last-child{
+    margin-bottom: 0;
+  }
+}
+
+.checkbox__input{
+  @include visually-hidden;
+}
+
+.checkbox__indicator{
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 27px;
+  height: 23px;
+  background-repeat: no-repeat;
+}
+
+.checkbox__input + .checkbox__indicator{
+  background-image: url("../img/checkbox-off.svg");
+}
+
+.checkbox__input:checked + .checkbox__indicator{
+  background-image: url("../img/checkbox-on.svg");
+}

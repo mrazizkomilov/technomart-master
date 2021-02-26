@@ -1,0 +1,12 @@
+ .about{
+   width: 530px;
+ }
+
+ .about__heading{
+   @include section-title;
+   margin-bottom: 33px;
+ }
+
+ .about__text{
+   margin-bottom: 26px;
+ }

@@ -1,0 +1,39 @@
+.social-pages{
+  display: flex;
+  flex-wrap: wrap;
+  @include reset-list;
+  margin-left: -3px;
+}
+
+.social-pages__item{
+  margin-left: 3px;
+}
+
+.social-pages__link{
+  display: block;
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  background-color: #212a3a;
+  font-size: 0;
+  background-repeat: no-repeat;
+  background-position: center center;
+
+  &:hover,
+  &:focus,
+  &:active{
+    background-color: #ee3643;
+  }
+
+  &--vkontakte{
+    background-image: url("../img/icon-vk.svg");
+  }
+
+  &--facebook{
+    background-image: url("../img/icon-fb.svg");
+  }
+
+  &--instagram{
+    background-image: url("../img/icon-insta.svg");
+  }
+}

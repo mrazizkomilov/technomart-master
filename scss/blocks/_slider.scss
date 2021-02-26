@@ -1,0 +1,57 @@
+.slider{
+  position: relative;
+}
+.slider__list{
+  display: flex;
+  @include reset-list;
+  overflow: hidden;
+}
+
+.slider__item{
+  display: none;
+  flex-direction: column;
+  align-items: flex-start;
+  flex-shrink: 0;
+  width: 620px;
+  height: 266px;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  &--drell{
+    background-image: url("../img/slider-image.jpg");
+    background-color: tomato;
+  }
+  &--perforator{
+    background-image: url("../img/slider-image-2.jpg");
+    background-color: green;
+  }
+}
+
+#slider-control-1:checked ~ .slider__list .slider__item:nth-child(1),
+#slider-control-2:checked ~ .slider__list .slider__item:nth-child(2){
+  display: flex;
+}
+.slider__button{
+  position: absolute;
+  top: 50%;
+  width: 22px;
+  height: 40px;
+  border: none;
+  margin-top: -20px;
+  font-size: 0;
+  line-height: 0;
+  background-color: transparent;
+  background-repeat: no-repeat;
+  background-size: 22px 40px;
+  cursor: pointer;
+
+  &--prev{
+    left: 25px;
+    background-image: url("../img/icon-left.svg");
+  }
+
+  &--next{
+    right: 25px;
+    background-image: url("../img/icon-right.svg");
+  }
+}

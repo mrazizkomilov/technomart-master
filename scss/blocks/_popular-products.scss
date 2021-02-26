@@ -1,0 +1,7 @@
+.popular-products__header{
+  @include section-header;
+}
+
+.popular-products__heading{
+  @include section-title($color: #32425c);
+}

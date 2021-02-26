@@ -1,0 +1,26 @@
+.slider-indicators{
+  position: absolute;
+  left: 50%;
+  bottom: 36px;
+  transform: translateX(-50%);
+  display: flex;
+  @include reset-list;
+}
+.slider-indicators__item{
+  margin: 0 5px;
+}
+
+.slider-indicators__label{
+  display: block;
+  width: 10px;
+  height: 10px;
+  border: 2px solid #ffffff;
+  border-radius: 50%;
+  font-size: 0;
+  background-color: #ffffff;
+}
+
+#slider-control-1:checked ~ .slider-indicators .slider-indicators__label[for="slider-control-1"],
+#slider-control-2:checked ~ .slider-indicators .slider-indicators__label[for="slider-control-2"]{
+  background-color: red;
+}

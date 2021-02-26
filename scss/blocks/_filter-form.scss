@@ -1,0 +1,42 @@
+.filter-form__fieldset{
+  padding: 0;
+  border: none;
+  margin: 0;
+}
+
+.filter-form__legend{
+  margin-bottom: 15px;
+  font-size: 17px;
+  line-height: 30px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.filter-form__divider{
+  height: 1px;
+  border: none;
+  margin: 25px 0 10px;
+  background-color: #e5e5e5;
+}
+
+.filter-form__button{
+  width: 140px;
+  height: 38px;
+  border: 1px solid #e5e5e5;
+  margin-top: 60px;
+  border-radius: 3px;
+  background: none;
+  text-transform: uppercase;
+  cursor: pointer;
+
+  &:hover,
+  &:focus{
+    border-color: #bdc6ca;
+  }
+
+  &:active{
+    border-color: transparent;
+    background-color: #ee3643;
+    color: #ffffff;
+  }
+}

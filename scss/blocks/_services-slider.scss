@@ -1,0 +1,95 @@
+ .services-slider{
+   display: flex;
+ }
+
+ .services-slider__indicators{
+   position: relative;
+   padding: 47px 0;
+   width: 240px;
+   font-family: $font-stack-accent;
+
+   &::after{
+     position: absolute;
+     top: 0;
+     right: 0;
+     width: 10px;
+     height: 279px;
+     background: url("../img/shadow.png") no-repeat;
+     content: "";
+   }
+ }
+
+ .services-slider__indicator{
+   display: block;
+   padding: 16px 22px;
+   font-size: 21px;
+   line-height: 30px;
+   background-color: #32425c;
+   color: #ffffff;
+   cursor: pointer;
+   box-shadow: 0 1px 0 0 #293449, inset 0 1px 0 0 #405069;
+
+   &:hover{
+     background-color: #293449;
+     color: #ffffff;
+   }
+
+ }
+
+ .services-slider__list{
+   display: flex;
+   @include reset-list;
+   width: 700px;
+   overflow: hidden;
+ }
+
+ .services-slider__item{
+   display: none;
+   flex-shrink: 0;
+   width: 700px;
+   padding: 43px 80px;
+   background-repeat: no-repeat;
+   background-position: right 70px;
+
+   &--delivery{
+     background-image: url("../img/delivery.png");
+   }
+
+   &--guarantee{
+     background-image: url("../img/guarantee.png");
+   }
+
+   &--credit{
+     background-image: url("../img/credit.png");
+   }
+ }
+
+#services-control-1:checked~ .services-slider__list .services-slider__item:nth-child(1),
+#services-control-2:checked~ .services-slider__list .services-slider__item:nth-child(2),
+#services-control-3:checked~ .services-slider__list .services-slider__item:nth-child(3){
+  display: block;
+}
+
+ #services-control-1:checked~ .services-slider__indicators .services-slider__indicator:nth-child(1),
+ #services-control-2:checked~ .services-slider__indicators .services-slider__indicator:nth-child(2),
+ #services-control-3:checked~ .services-slider__indicators .services-slider__indicator:nth-child(3){
+     background-color: #ffffff;
+     color: #32425c;
+     box-shadow: none;
+ }
+
+ .services-slider__title{
+   @include section-title($color: #32425c);
+   margin-bottom: 29px;
+   font-size: 36px;
+   line-height: 36px;
+ }
+
+ .services-slider__text{
+   width: 380px;
+   margin-bottom: 25px;
+
+   &--narrow{
+     width: 300px;
+   }
+ }

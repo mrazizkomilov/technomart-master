@@ -1,0 +1,24 @@
+.product-added-modal{
+  @include modal;
+}
+
+.product-added-modal__body{
+  @include modal-body;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.product-added-modal__footer{
+  display: flex;
+  justify-content: space-between;
+  @include modal-footer;
+}
+
+.product-added-modal__icon{
+  margin-right: 32px;
+}
+
+.product-added-modal__text{
+  @include section-title;
+  text-transform: none;
+}

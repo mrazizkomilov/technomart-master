@@ -1,0 +1,45 @@
+.breadcrumbs{
+padding: 22px 0;
+}
+
+.breadcrumbs__list{
+  display: flex;
+  flex-wrap: wrap;
+  @include reset-list;
+  text-transform: uppercase;
+}
+
+.breadcrumbs__item{
+  position: relative;
+  margin-right: 39px;
+
+  &::after{
+    position: absolute;
+    top: 11px;
+    right: -22px;
+    width: 8px;
+    height: 12px;
+    margin-top: -6px;
+    background: url("../img/icon-right-small.svg") no-repeat;
+    content: "";
+  }
+
+  &--active::after{
+    display: none;
+  }
+}
+
+.breadcrumbs__link{
+  display: block;
+  color: #000000;
+  text-decoration: none;
+
+  &--home{
+    width: 14px;
+    height: 100%;
+    font-size: 0;
+    line-height: 24px;
+    background: url("../img/icon-home.svg") no-repeat center center;
+  }
+}
+

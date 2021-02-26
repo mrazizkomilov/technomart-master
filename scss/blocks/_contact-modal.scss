@@ -1,0 +1,58 @@
+.contact-modal{
+  @include modal;
+}
+
+.contact-modal__fields-wrapper{
+  @include modal-body;
+}
+
+.contact-modal__group{
+  width: 22px;
+  margin-bottom: 22px;
+
+  &--full-width{
+    width: 100%;
+  }
+
+  &--last{
+    margin-bottom: 0;
+  }
+}
+
+.contact-modal__label{
+  display: inline-block;
+  margin-bottom: 13px;
+  font-family: $font-stack-accent;
+  font-size: 18px;
+  line-height: 18px;
+  color: #000000;
+  cursor: pointer;
+}
+
+.contact-modal__field{
+  width: 100%;
+  padding: 10px 16px;
+  border: 2px solid #dee3e4;
+  border-radius: 3px;
+  font-family: $font-stack-main;
+  line-height: 18px;
+  @include placeholder-color($color: #999999);
+
+  &--textarea{
+    min-height: 114px;
+    resize: vertical;
+  }
+
+  &:hover{
+    border-color: #b5b5b5;
+  }
+
+  &:focus{
+    border-color: #ee3643;
+    outline: 0;
+  }
+}
+
+.contact-modal__footer{
+  @include modal-footer;
+}
